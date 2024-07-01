@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-16T20:50:00 IST" name="Default suite" finished-at="2024-03-16T20:50:25 IST" duration-ms="24096">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-03-16T20:50:00 IST" name="Default test" finished-at="2024-03-16T20:50:25 IST" duration-ms="24096">
+      <class name="com.salesforce.testcases.TC001_CreateLeadUsingUI">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:00 IST" name="startReport" finished-at="2024-03-16T20:50:00 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:00 IST" name="setValues" finished-at="2024-03-16T20:50:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:00 IST" name="setUpClass" finished-at="2024-03-16T20:50:01 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:01 IST" name="startTestCase" finished-at="2024-03-16T20:50:01 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:01 IST" name="preCondition" finished-at="2024-03-16T20:50:13 IST" duration-ms="11954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createNewAccount(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:13 IST" name="createNewAccount" data-provider="fetchData" finished-at="2024-03-16T20:50:24 IST" duration-ms="10896" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ranjini.r@testleaf.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testleaf$1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[See the reporter for details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: See the reporter for details.
+at com.framework.utils.Reporter.reportStep(Reporter.java:97)
+at com.framework.utils.Reporter.reportStep(Reporter.java:112)
+at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:612)
+at com.salesforce.pages.HomePage.verifyHomePage(HomePage.java:9)
+at com.salesforce.testcases.TC001_CreateLeadUsingUI.createNewAccount(TC001_CreateLeadUsingUI.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAccount -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:24 IST" name="postCondition" finished-at="2024-03-16T20:50:25 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:25 IST" name="tearDownClass" finished-at="2024-03-16T20:50:25 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="endResult()[pri:0, instance:com.salesforce.testcases.TC001_CreateLeadUsingUI@752325ad]" started-at="2024-03-16T20:50:25 IST" name="endResult" finished-at="2024-03-16T20:50:25 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endResult -->
+      </class> <!-- com.salesforce.testcases.TC001_CreateLeadUsingUI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
